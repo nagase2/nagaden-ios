@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12118" systemVersion="17C88" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="49e-Tb-3d3">
-    <device id="ipad12_9" orientation="portrait">
+    <device id="ipad12_9" orientation="landscape">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -18,24 +19,24 @@
                         <viewControllerLayoutGuide type="bottom" id="4ug-Mw-9AY"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="tsR-hK-woN">
-                        <rect key="frame" x="0.0" y="0.0" width="1024" height="1366"/>
+                        <rect key="frame" x="0.0" y="0.0" width="1366" height="1024"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" text="First View" textAlignment="center" lineBreakMode="tailTruncation" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="KQZ-1w-vlD">
-                                <rect key="frame" x="433.5" y="662.5" width="157.5" height="41.5"/>
+                                <rect key="frame" x="604.5" y="491.5" width="157.5" height="41.5"/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="36"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Loaded by FirstViewController" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="A5M-7J-77L">
-                                <rect key="frame" x="415" y="712" width="194.5" height="17"/>
+                                <rect key="frame" x="586" y="541" width="194.5" height="17"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2RY-Ta-BpM">
-                                <rect key="frame" x="0.0" y="0.0" width="1024" height="1317"/>
+                                <rect key="frame" x="0.0" y="0.0" width="1366" height="975"/>
                                 <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </webView>
                         </subviews>
@@ -69,7 +70,7 @@
                         <viewControllerLayoutGuide type="bottom" id="Djb-ko-YwX"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="QS5-Rx-YEW">
-                        <rect key="frame" x="0.0" y="0.0" width="1024" height="1366"/>
+                        <rect key="frame" x="0.0" y="0.0" width="1366" height="1024"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" fixedFrame="YES" text="Second View" textAlignment="center" lineBreakMode="tailTruncation" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="zEq-FU-wV5">
@@ -88,7 +89,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tB0-Zc-QxC">
-                                <rect key="frame" x="0.0" y="0.0" width="1024" height="1317"/>
+                                <rect key="frame" x="0.0" y="0.0" width="1366" height="975"/>
                                 <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </webView>
                         </subviews>
@@ -100,7 +101,7 @@
                             <constraint firstItem="tB0-Zc-QxC" firstAttribute="top" secondItem="QS5-Rx-YEW" secondAttribute="top" id="pdd-AU-paE"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="今日のグラフ" image="second" id="cPa-gy-q4n"/>
+                    <tabBarItem key="tabBarItem" tag="3" title="今日のグラフ" image="sample1-icon" id="cPa-gy-q4n"/>
                     <connections>
                         <outlet property="secoundWebView" destination="tB0-Zc-QxC" id="oNs-wr-9aI"/>
                     </connections>
@@ -118,66 +119,95 @@
                         <viewControllerLayoutGuide type="bottom" id="5eA-ga-8Vs"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="eLV-R9-7fp">
-                        <rect key="frame" x="0.0" y="0.0" width="1024" height="1366"/>
+                        <rect key="frame" x="0.0" y="0.0" width="1366" height="1024"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" fixedFrame="YES" text="Third　" textAlignment="center" lineBreakMode="tailTruncation" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="AWO-5V-6I9">
-                                <rect key="frame" x="19" y="218" width="209.5" height="42"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="RQc-Yn-806">
+                                <rect key="frame" x="370" y="658" width="394" height="50"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="36"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <webView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="AUF-J2-daq">
-                                <rect key="frame" x="383" y="-114" width="1024" height="1157"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </stackView>
+                            <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="AUF-J2-daq">
+                                <rect key="frame" x="0.0" y="0.0" width="1366" height="923"/>
                                 <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </webView>
-                            <datePicker contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="date" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="8G6-bm-w9o">
-                                <rect key="frame" x="20" y="1165" width="360" height="71"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
-                                <date key="date" timeIntervalSinceReferenceDate="536578151.16090798">
-                                    <!--2018-01-02 09:29:11 +0000-->
-                                </date>
-                            </datePicker>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4lU-m5-nm4">
-                                <rect key="frame" x="421" y="1269" width="42" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <pickerView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="WQH-3J-iFD">
-                                <rect key="frame" x="-46" y="967" width="1024" height="216"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
-                            </pickerView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eDg-DU-Aik">
-                                <rect key="frame" x="58" y="379" width="46" height="37"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eDg-DU-Aik">
+                                <rect key="frame" x="1283" y="935" width="53" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="53" id="Vsj-mC-MTH"/>
+                                </constraints>
+                                <state key="normal" title="印刷"/>
                                 <connections>
                                     <action selector="printButton:" destination="2h5-OS-ljT" eventType="touchUpInside" id="Jhy-PM-MEv"/>
                                 </connections>
                             </button>
-                            <datePicker contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="date" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="Rad-ij-udk">
-                                <rect key="frame" x="15" y="663" width="360" height="99"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                            <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="date" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="rxL-ri-jGd">
+                                <rect key="frame" x="467" y="926" width="320" height="49"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="320" id="h1b-ln-0zj"/>
+                                    <constraint firstAttribute="height" constant="49" id="xXf-YW-0HW"/>
+                                </constraints>
+                                <date key="date" timeIntervalSinceReferenceDate="536584802.17220598">
+                                    <!--2018-01-02 11:20:02 +0000-->
+                                </date>
+                                <connections>
+                                    <action selector="toDateChanged:" destination="2h5-OS-ljT" eventType="valueChanged" id="8mW-49-O4K"/>
+                                </connections>
+                            </datePicker>
+                            <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="8ji-Hh-dJ2">
+                                <rect key="frame" x="370" y="642" width="18" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </stackView>
+                            <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="date" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="Rad-ij-udk">
+                                <rect key="frame" x="40" y="926" width="320" height="49"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="49" id="A9V-c2-1Dm"/>
+                                    <constraint firstAttribute="width" constant="320" id="YQV-ey-8mA"/>
+                                </constraints>
                                 <date key="date" timeIntervalSinceReferenceDate="536578151.16090798">
                                     <!--2018-01-02 09:29:11 +0000-->
                                 </date>
+                                <connections>
+                                    <action selector="fromDateChanged:" destination="2h5-OS-ljT" eventType="valueChanged" id="mak-U6-74O"/>
+                                </connections>
                             </datePicker>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="〜" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4lU-m5-nm4">
+                                <rect key="frame" x="385" y="928" width="52" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="52" id="4gc-O9-Trc"/>
+                                    <constraint firstAttribute="height" constant="40" id="V60-7N-vfz"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="5eA-ga-8Vs" firstAttribute="top" secondItem="4lU-m5-nm4" secondAttribute="bottom" constant="7" id="1m5-ro-duU"/>
+                            <constraint firstItem="5eA-ga-8Vs" firstAttribute="top" secondItem="Rad-ij-udk" secondAttribute="bottom" id="3JO-7u-Ewm"/>
+                            <constraint firstItem="4lU-m5-nm4" firstAttribute="top" secondItem="AUF-J2-daq" secondAttribute="bottom" constant="5" id="9gg-yI-Rus"/>
+                            <constraint firstAttribute="trailing" secondItem="AUF-J2-daq" secondAttribute="trailing" id="9zb-w2-drN"/>
+                            <constraint firstItem="4lU-m5-nm4" firstAttribute="leading" secondItem="Rad-ij-udk" secondAttribute="trailing" constant="25" id="CCA-q3-Mis"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="eDg-DU-Aik" secondAttribute="trailing" constant="10" id="Dg6-KO-Ieu"/>
+                            <constraint firstItem="5eA-ga-8Vs" firstAttribute="top" secondItem="eDg-DU-Aik" secondAttribute="bottom" constant="10" id="Lum-Xq-fvK"/>
+                            <constraint firstItem="5eA-ga-8Vs" firstAttribute="top" secondItem="rxL-ri-jGd" secondAttribute="bottom" id="S4k-qr-6M4"/>
+                            <constraint firstItem="Rad-ij-udk" firstAttribute="leading" secondItem="eLV-R9-7fp" secondAttribute="leading" constant="40" id="Tw0-yU-KsN"/>
+                            <constraint firstItem="AUF-J2-daq" firstAttribute="top" secondItem="eLV-R9-7fp" secondAttribute="top" id="YmM-8A-C3V"/>
+                            <constraint firstItem="AUF-J2-daq" firstAttribute="leading" secondItem="eLV-R9-7fp" secondAttribute="leading" id="fhR-fY-yga"/>
+                            <constraint firstItem="rxL-ri-jGd" firstAttribute="leading" secondItem="4lU-m5-nm4" secondAttribute="trailing" constant="30" id="ld3-61-cyb"/>
+                            <constraint firstAttribute="trailing" secondItem="AUF-J2-daq" secondAttribute="trailing" id="suc-qb-ayV"/>
+                        </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="月ごとのグラフ" image="first" id="Rij-29-HW7"/>
+                    <tabBarItem key="tabBarItem" title="月ごとのグラフ" image="today-icon-Small" id="Rij-29-HW7"/>
                     <connections>
+                        <outlet property="fromDate" destination="Rad-ij-udk" id="anS-VE-V0K"/>
                         <outlet property="thirdWebView" destination="AUF-J2-daq" id="6AI-8c-rfN"/>
+                        <outlet property="toDate" destination="rxL-ri-jGd" id="qk5-k8-eyK"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5bb-8Z-oXZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="747.65625" y="1064.2752562225476"/>
+            <point key="canvasLocation" x="747.58418740849186" y="1064.0625"/>
         </scene>
         <!--ダッシュボード-->
         <scene sceneID="sag-Cs-iw0">
@@ -188,11 +218,11 @@
                         <viewControllerLayoutGuide type="bottom" id="l8v-Ux-2hW"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="A1s-sY-kmS" customClass="For">
-                        <rect key="frame" x="0.0" y="0.0" width="1024" height="1366"/>
+                        <rect key="frame" x="0.0" y="0.0" width="1366" height="1024"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1F8-CZ-EZo">
-                                <rect key="frame" x="0.0" y="0.0" width="1024" height="1317"/>
+                                <rect key="frame" x="0.0" y="0.0" width="1366" height="975"/>
                                 <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </webView>
                         </subviews>
@@ -211,7 +241,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zRQ-82-j9e" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="728.79999999999995" y="1838.2308845577213"/>
+            <point key="canvasLocation" x="0.0" y="1093"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="yl2-sM-qoP">
@@ -224,10 +254,10 @@
                         <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
                     </tabBar>
                     <connections>
-                        <segue destination="9pv-A4-QxB" kind="relationship" relationship="viewControllers" id="u7Y-xg-7CH"/>
-                        <segue destination="8rJ-Kc-sve" kind="relationship" relationship="viewControllers" id="lzU-1b-eKA"/>
-                        <segue destination="2h5-OS-ljT" kind="relationship" relationship="viewControllers" id="Zez-B3-tau"/>
-                        <segue destination="XKX-xu-Aw2" kind="relationship" relationship="viewControllers" id="GeR-qr-IHn"/>
+                        <segue destination="8rJ-Kc-sve" kind="relationship" relationship="viewControllers" id="1i2-us-zkN"/>
+                        <segue destination="2h5-OS-ljT" kind="relationship" relationship="viewControllers" id="Ku0-ES-dSy"/>
+                        <segue destination="9pv-A4-QxB" kind="relationship" relationship="viewControllers" id="iky-Uj-5T1"/>
+                        <segue destination="XKX-xu-Aw2" kind="relationship" relationship="viewControllers" id="yQZ-A5-0Hh"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HuB-VB-40B" sceneMemberID="firstResponder"/>
@@ -237,6 +267,7 @@
     </scenes>
     <resources>
         <image name="first" width="30" height="30"/>
-        <image name="second" width="30" height="30"/>
+        <image name="sample1-icon" width="29" height="29"/>
+        <image name="today-icon-Small" width="29" height="29"/>
     </resources>
 </document>
