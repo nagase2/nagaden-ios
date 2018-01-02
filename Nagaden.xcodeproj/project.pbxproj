@@ -13,6 +13,9 @@
 		3C26FD591FF9FF8900DA511B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3C26FD571FF9FF8900DA511B /* Main.storyboard */; };
 		3C26FD5B1FF9FF8900DA511B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3C26FD5A1FF9FF8900DA511B /* Assets.xcassets */; };
 		3C26FD5E1FF9FF8900DA511B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3C26FD5C1FF9FF8900DA511B /* LaunchScreen.storyboard */; };
+		3C26FD681FFA03AF00DA511B /* ThirdViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C26FD671FFA03AF00DA511B /* ThirdViewController.swift */; };
+		3C26FD6A1FFA2C9600DA511B /* ForthWebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C26FD691FFA2C9600DA511B /* ForthWebView.swift */; };
+		3C26FD6C1FFA2CC700DA511B /* ForthWebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C26FD6B1FFA2CC700DA511B /* ForthWebViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +27,9 @@
 		3C26FD5A1FF9FF8900DA511B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3C26FD5D1FF9FF8900DA511B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3C26FD5F1FF9FF8900DA511B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3C26FD671FFA03AF00DA511B /* ThirdViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThirdViewController.swift; sourceTree = "<group>"; };
+		3C26FD691FFA2C9600DA511B /* ForthWebView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ForthWebView.swift; sourceTree = "<group>"; };
+		3C26FD6B1FFA2CC700DA511B /* ForthWebViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ForthWebViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +69,9 @@
 				3C26FD5A1FF9FF8900DA511B /* Assets.xcassets */,
 				3C26FD5C1FF9FF8900DA511B /* LaunchScreen.storyboard */,
 				3C26FD5F1FF9FF8900DA511B /* Info.plist */,
+				3C26FD671FFA03AF00DA511B /* ThirdViewController.swift */,
+				3C26FD691FFA2C9600DA511B /* ForthWebView.swift */,
+				3C26FD6B1FFA2CC700DA511B /* ForthWebViewController.swift */,
 			);
 			path = Nagaden;
 			sourceTree = "<group>";
@@ -142,7 +151,10 @@
 			files = (
 				3C26FD561FF9FF8900DA511B /* SecondViewController.swift in Sources */,
 				3C26FD521FF9FF8900DA511B /* AppDelegate.swift in Sources */,
+				3C26FD6A1FFA2C9600DA511B /* ForthWebView.swift in Sources */,
+				3C26FD681FFA03AF00DA511B /* ThirdViewController.swift in Sources */,
 				3C26FD541FF9FF8900DA511B /* FirstViewController.swift in Sources */,
+				3C26FD6C1FFA2CC700DA511B /* ForthWebViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
