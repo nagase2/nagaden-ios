@@ -9,7 +9,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--今日のグラフ-->
+        <!--リアルタイムグラフ-->
         <scene sceneID="hNz-n2-bh7">
             <objects>
                 <viewController id="9pv-A4-QxB" customClass="FirstViewController" customModule="Nagaden" customModuleProvider="target" sceneMemberID="viewController">
@@ -51,13 +51,16 @@
                             <constraint firstAttribute="trailing" secondItem="2RY-Ta-BpM" secondAttribute="trailing" id="i5J-oB-ORO"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="今日のグラフ" image="first" id="acW-dT-cKf"/>
+                    <tabBarItem key="tabBarItem" title="リアルタイムグラフ" image="first" id="acW-dT-cKf"/>
+                    <connections>
+                        <outlet property="firstWebView" destination="2RY-Ta-BpM" id="o2u-Fm-cGS"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="W5J-7L-Pyd" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="750" y="-320.20497803806734"/>
         </scene>
-        <!--月間グラフ-->
+        <!--今日のグラフ-->
         <scene sceneID="wg7-f3-ORb">
             <objects>
                 <viewController id="8rJ-Kc-sve" customClass="SecondViewController" customModule="Nagaden" customModuleProvider="target" colorLabel="IBBuiltInLabel-Orange" sceneMemberID="viewController">
@@ -97,13 +100,16 @@
                             <constraint firstItem="tB0-Zc-QxC" firstAttribute="top" secondItem="QS5-Rx-YEW" secondAttribute="top" id="pdd-AU-paE"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="月間グラフ" image="second" id="cPa-gy-q4n"/>
+                    <tabBarItem key="tabBarItem" title="今日のグラフ" image="second" id="cPa-gy-q4n"/>
+                    <connections>
+                        <outlet property="secoundWebView" destination="tB0-Zc-QxC" id="oNs-wr-9aI"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4Nw-L8-lE0" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="750" y="359.73645680819908"/>
         </scene>
-        <!--Item-->
+        <!--年間-->
         <scene sceneID="cKa-AL-ohG">
             <objects>
                 <viewController id="2h5-OS-ljT" customClass="ThirdViewController" customModule="Nagaden" customModuleProvider="target" sceneMemberID="viewController">
@@ -136,7 +142,7 @@
                             <constraint firstItem="AUF-J2-daq" firstAttribute="top" secondItem="eLV-R9-7fp" secondAttribute="top" id="g1A-ht-pNU"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item" id="Rij-29-HW7"/>
+                    <tabBarItem key="tabBarItem" title="年間" image="first" id="Rij-29-HW7"/>
                     <connections>
                         <outlet property="thirdWebView" destination="AUF-J2-daq" id="6AI-8c-rfN"/>
                     </connections>
@@ -145,7 +151,7 @@
             </objects>
             <point key="canvasLocation" x="748" y="1064.6176911544228"/>
         </scene>
-        <!--Item-->
+        <!--ダッシュボード-->
         <scene sceneID="sag-Cs-iw0">
             <objects>
                 <viewController id="XKX-xu-Aw2" customClass="ForthWebViewController" customModule="Nagaden" customModuleProvider="target" sceneMemberID="viewController">
@@ -170,7 +176,7 @@
                             <constraint firstItem="1F8-CZ-EZo" firstAttribute="leading" secondItem="A1s-sY-kmS" secondAttribute="leading" id="yyf-we-7Z0"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item" id="Ya8-pC-OwZ"/>
+                    <tabBarItem key="tabBarItem" title="ダッシュボード" image="first" id="Ya8-pC-OwZ"/>
                     <connections>
                         <outlet property="forthWebView" destination="1F8-CZ-EZo" id="byk-SJ-wa9"/>
                     </connections>
