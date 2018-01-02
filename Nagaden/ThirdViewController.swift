@@ -11,13 +11,12 @@ import UIKit
 
 class ThirdViewController: UIViewController {
     
-    //let url = URL(string: "https://www.google.co.jp")
-    
+
     @IBOutlet weak var thirdWebView: UIWebView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        let url = URL(string: "https://www.google.co.jp")
+        let url = URL(string: "https://m2x.att.com/dashboards/shared/10aa6f363cefdab87add5e583cffbd02")
         thirdWebView.loadRequest(URLRequest(url: url!))
     
     }
